@@ -9,11 +9,58 @@
 </head>
 
 <body>
-    <h1>나리이이~</h1>
-    <img src="https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80" />
+    <!-- 가장 대표적인 텍스트 h1 태그 보통 1개만 씀 -->
+    <h1>h1태그 저장</h1>
+    <h2>h2태그 저장</h2>
+    <p>p태그 저장</p>
+
+    <!-- 이미지태그  -->
+    <img
+        src="https://mblogthumb-phinf.pstatic.net/MjAyMDA4MjdfMSAg/MDAxNTk4NTE2MjY4ODE3.j5D4MdAtv0hW8IUbkYlzpN-2WWrbW4_ScVy9r0ZftEAg.3Ns8BtBYRhwWefXPpffwHLyFyK7nEAG-kSSJPj7eOIYg.PNG.abcog02/1598516267632.png?type=w800" />
+    <!-- 링크태그를 쓸때는 반드시 rel="noreferrer noopener" target="_blank" 를 해준다. 전 페이지 스텍을 안남김. -->
     <a href="https://www.google.com/chrome" rel="noreferrer noopener" target="_blank">크롬 내려받기</a>
 
-    
+    <!-- xml 코드와 비슷함. 태그안쪽에 속성값 을 넣어주면 됨.-->
+    <p>p태그 안에 a태그
+        <a href="https://www.google.com/chrome" rel="noreferrer noopener" target="_blank">a태그</a>클릭
+    </p>
+
+    <!-- 리스트 태그 -->
+    <h2>리스트 태그 3개</h2>
+    <ul>
+        <li>0번</li>
+        <li>1번</li>
+        <li>2번</li>
+    </ul>
+
+    <!-- 테이블 태그 table 안쪽에 tr은 행 td는 열  -->
+    <h2>테이블 태그 </h2>
+    <table border="1">
+        <tr>
+            <td>HTML</td>
+            <td>td태그2</td>
+        </tr>
+
+        <tr>
+            <td>CSS</td>
+            <td>CSS</td>
+        </tr>
+
+        <tr>
+            <td>JS</td>
+            <td>REACT NATIVE</td>
+        </tr>
+
+        <tr>
+            <td>ANDROID</td>
+            <td>JAVA,KOTLIN</td>
+        </tr>
+    </table>
+
+    <!-- edittext와 동일한 역할 input태그 -->
+    <h2>editText</h2>
+    작성자 : <input id="edt_value" type="text" />
+    질문내용 : <textarea> textarea 태그 </textarea>
 </body>
 
 </html>
