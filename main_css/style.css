@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+}
+#active2 {
+  color: red;
+}
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+h1 {
+  font-size: 45px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin: 0;
+  padding: 20px;
+}
+ol {
+  border-right: 1px solid gray;
+  width: 80px;
+  margin: 0;
+  padding: 20px;
+}
+ol {
+  padding-left: 33px;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid ol {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid news {
+  padding-left: 25px;
+}
+
+/* screen width > 800px  스크린크기가 800보다 크다면?? 없애라
+위 가짜코드를 미디어쿼리를 주는것 == 반응형디자인 
+스크린의 크기가 800픽셀보다 크다 라는 말이 스크린크기의 최소값이 적어도
+800픽셀이다 라는말과 같지? 그게 밑의 코드임 
+개발자 도구에서 가로x세로 임 가로값이 800이 넘어가면 해당 div 값이 없어지는걸 볼수있음
+그럼 min은 최소값이니까 max는 최대값이겠지?
+max-width:800px 는 무슨뜻일까? 가로가 최대 800까지 간다면
+screen width < 800px 가 된다는것
+즉 , 어떤 특정조건을 만족한다면 구현부를 실행해라. 미디어쿼리 == 반응형디자인 
+
+max-width:800px 는 가로길이가 800보다 커지면
+min-width:800px 는 가로길이가 800보다 작아지면 */
+
+@media (max-width: 800px) {
+  #grid {
+    display: block;
+    margin-left: 20px;
+  }
+  ol {
+    border-right: none;
+  }
+  h1 {
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+
+    <style>
+        /* h1태그와 같이 화면전체를 쓰는태그를 block이라 함 */
+        h1,a{
+            /* border-width: 5px;
+            border-color: red;
+            border-style: solid; */
+            border: 5px solid royalblue;
+            padding: 20px;
+            margin: 20px;
+            width: 50%;
+            /* display: inline; */
+            /* display: none;  사라짐 visiblity = View.GONE 과 같음.*/
+        }
+        /* a태그처럼 자기자신의 부피만 차지하는걸 inline element라 함 */
+        /* a{ */
+            /* border-width: 5px;
+            border-color: red;
+            border-style: solid; */
+            /* display: block; */
+        /* } */
+        /* 그런데 인라인에 display: block; 주거나 반대로 준다면 해당하는 값이 들어감 */
+        /* 또한 h1과 a에 중복이 들어감. >> , 쓰고 같이 진행하면 된다.
+            border-color: red;
+            border-style: solid;
+            border: 5px solid black; 또한 중복이여서 border: 5px solid black; 로 하나로 압축  */
+    </style>
+</head>
+
+<body>
+    <h1>구글 뉴스</h1>구글이 제공하고 운영하는 무료(<a href="https://news.naver.com/" target="_blank" rel="">뉴스</a>)
+    애그리게이터이다<br> 자동 집계 알고리즘에 의해 수천 곳의 발행사로부터 최신의 정보를 선별한다.<br>
+    현 총괄자는 리처드 징그러스이다
+    
+    <h1>구글 뉴스</h1>
+</body>
+</html>

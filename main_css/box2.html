@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box2</title>
+    <!-- 객체호출 하는것처럼 이렇게 style.css를 호출한다 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>WEB</h1>
+    <!-- #grid ol 은 그리드 안의 ol태그를 정확히 집어줌 -->
+    <!-- 왼쪽 150px는 1컬럼 , 오른쪽은 1fr -->
+    <!-- 하나의 그리드를 나타내기위해서 이렇게 div 부모태그로 뭉쳐준다 -->
+    <div id="grid">
+        <!-- 1컬럼 -->
+        <ol>
+            <li><a href="https://news.naver.com/" target="_blank" >HTML</a></li> <br>
+            <li><a href="https://news.naver.com/" target="_blank" >CSS</a></li> <br>
+            <li><a href="https://news.naver.com/">JavaScript</a></li>
+        </ol>
+        <!-- 2번쨰 컬럼 -->
+        <div id="news">
+            <h2>CSS</h2>
+            <p>
+                구조화된 HTML은 HTML 태그를 본연의 용도에 맞게 사용하는 것이다. 
+                예를 들어 최상위 제목을 뜻하는 태그는 문서의 제목 수준으로 쓰이며, 본문 문단은 태그로 나눈다. 
+                이렇게 하면 디자인적 요소가 대부분 배제되기 때문에 HTML을 알아보기 훨씬 쉽다.
+                여기서 '알아보기 쉽다'에는 사람(프로그래머)뿐만 아니라 기계(웹 브라우저)역시 포함된다. 
+                기계가 이해하기 쉬운 HTML은 다양한 포맷으로 출력 형식을 바꾸기 
+                용이하고(CSS파일을 모바일용, PC용 등으로 각자 준비해 교체하는 방식으로 적용한다), 
+                문서의 해독(파싱)속도가 빨라지며 동적인 기능을 구현하기가 더 쉬워진다. 
+                그리고 대부분의 경우 구조화된 HTML이 과거의 비구조화 HTML보다 문서 크기가 상대적으로 작다.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
