@@ -27,3 +27,11 @@ https://dashboard.tawk.to/?lang=en#/chat
 https://jwdev-1.disqus.com/admin/settings/universalcode/
 방문자기록
 https://www.youtube.com/watch?v=K3cYoZ9AFOI&list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb&index=34
+
+그리드 flex 중요
+WEB2 CSS - 10. 그리드 소개 중요
+https://www.youtube.com/watch?v=M1eQFIBY2vI&list=PLuHgQVnccGMAnWgUYiAW2cTzSBywFO75B&index=10
+해당부분 복습
+
+- 해당 기술 써도되는지 안되는지
+https://caniuse.com/
