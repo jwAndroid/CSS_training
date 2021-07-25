@@ -1,6 +1,5 @@
 ##0721
 안좋은 코드
-
 - 스타일값 들어간거 다 빼기. o
 - 높이 가로 저렇게 하드코딩적으로 넣지말기 o
 - body , head 여러게 넣는게 아니라 1개만 넣어줄것 o
@@ -9,3 +8,22 @@
 - h1태그는 해당 페이지에서 가장 중요한 정보를 담고있기때문에 로고나 말 그대로 중요한정보를 담아준다. (검색봇이 가장먼저 찾기때문) o
 
 ##0725
+https://wepplication.github.io/programming/github-pages/
+-> 커맨드 정리
+
+https://jwandroid.github.io/web/main_html/first_repo
+
+깃허브 호스팅
+https://jwandroid.github.io/web/
+https://jwandroid.github.io/web/main_html/life/html_life_project/project_1
+경로 모두 써줄것
+
+- 호스팅 관련 프리 스태틱 웹 호스팅 > 검색
+빗벌룬 , 네오사이트 , 아마존s3 , 구글클라우드서비스 , 아자르 블롭
+
+채팅
+https://dashboard.tawk.to/?lang=en#/chat
+댓글
+https://jwdev-1.disqus.com/admin/settings/universalcode/
+방문자기록
+https://www.youtube.com/watch?v=K3cYoZ9AFOI&list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb&index=34
