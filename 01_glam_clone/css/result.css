@@ -10,5 +10,25 @@
 
 .contents {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
+}
+
+.button {
+  width: 320px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #043bf0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.5;
 }
