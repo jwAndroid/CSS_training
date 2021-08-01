@@ -1,3 +1,8 @@
+## http://127.0.0.1:5500/01_glam_clone/loading.html
+
+00_first_repo
+
+
 ##0721
 안좋은 코드
 - 스타일값 들어간거 다 빼기. o
@@ -35,3 +40,10 @@ https://www.youtube.com/watch?v=M1eQFIBY2vI&list=PLuHgQVnccGMAnWgUYiAW2cTzSBywFO
 
 - 해당 기술 써도되는지 안되는지
 https://caniuse.com/
+
+##0801
+- css에서
+.button:hover {
+  opacity: 0.5;
+} 이런식으로 .button:hover 붙여서 써야함.
+.button :hover 이렇게 떨어지면 적용이 안됨.

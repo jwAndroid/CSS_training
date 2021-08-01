@@ -1,0 +1,74 @@
+.number {
+  width: 100%;
+  font-weight: bold;
+  font-size: 40px;
+  color: #09ee60;
+  padding-left: 10px;
+  margin-top: 100px;
+}
+
+.question-container {
+  width: 100%;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+
+.question-container div {
+  width: 100%;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.answer-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.answer-container div {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: #f7f7f7;
+  border-radius: 30px;
+  padding: 0 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .answer-container div:hover {
+    background-color: #09ee60;
+    color: rgb(231, 55, 55);
+  }
+}
+
+.counter {
+  width: 100%;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.15);
+  margin-top: 100px;
+}
+
+.progress {
+  position: relative;
+  height: 7px;
+  width: 100%;
+  background-color: #f7f7f7;
+  margin-top: 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.progress div {
+  position: absolute;
+  top: -10px;
+  height: 7px;
+  background-color: #09ee60;
+  margin-top: 10px;
+  border-radius: 10px;
+  transition: width 0.2s ease-out 0s;
+}
