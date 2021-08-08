@@ -5,6 +5,7 @@ button.addEventListener("click", () => {
 
 const resultPoint = () => {
   const results = JSON.parse(localStorage.getItem("results"));
+
   console.log(results);
 };
 
