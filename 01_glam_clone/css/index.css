@@ -1,6 +1,7 @@
 .flex-container {
   display: flex;
   justify-content: space-around;
+  width: 100%;
   padding: 20px;
   border-radius: 20px;
   background: #60b99a;
@@ -12,6 +13,7 @@
   margin: 15px;
   text-align: center;
   border-radius: 10px;
+  width: 100px;
 }
 
 .title {
