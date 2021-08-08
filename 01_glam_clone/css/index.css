@@ -1,12 +1,11 @@
 .flex-container {
   display: flex;
   justify-content: space-around;
-  margin: 10px;
-  padding: 15px;
+  padding: 20px;
   border-radius: 20px;
   background: #60b99a;
   flex-direction: row;
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 .flex-item {

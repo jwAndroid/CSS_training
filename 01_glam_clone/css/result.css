@@ -62,3 +62,13 @@
   margin-top: 10px;
   text-align: center;
 }
+
+.pointMessage {
+  width: 150%;
+  font-weight: bold;
+  font-size: 50px;
+  color: #8d01ff;
+  padding-left: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
