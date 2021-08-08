@@ -32,7 +32,8 @@ const updateAnswer = () => {
     div.innerHTML = answer;
 
     div.addEventListener("click", () => {
-      results.push({ index: answerIndex, answer });
+      results.push({ answer });
+      //  results.push({ index: answerIndex, answer });
 
       if (index < data.length - 1) {
         index = index + 1;
@@ -43,7 +44,6 @@ const updateAnswer = () => {
 
         updateQuestion();
         updateAnswer();
-        console.log("값은?");
       } else {
         localStorage.setItem("results", JSON.stringify(results));
         location.href = "loading.html"; // production

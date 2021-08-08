@@ -32,3 +32,13 @@
 .button:hover {
   opacity: 0.5;
 }
+
+.result-container {
+  width: 100%;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000000;
+  padding-left: 10px;
+  margin-top: 100px;
+  text-align: center;
+}
