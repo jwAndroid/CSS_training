@@ -2,7 +2,7 @@
   width: 100%;
   font-weight: bold;
   font-size: 40px;
-  color: #09ee60;
+  color: #ffa705;
   padding-left: 10px;
   margin-top: 100px;
   text-align: center;
@@ -34,11 +34,31 @@
 }
 
 .result-container {
-  width: 100%;
+  width: 150%;
   font-weight: bold;
   font-size: 20px;
-  color: #000000;
+  color: #f73808;
   padding-left: 10px;
-  margin-top: 100px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.correct-answer-container {
+  width: 100%;
+  font-weight: bold;
+  font-size: 40px;
+  color: #ffa705;
+  padding-left: 10px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.correct-container {
+  width: 150%;
+  font-weight: bold;
+  font-size: 20px;
+  color: #f73808;
+  padding-left: 10px;
+  margin-top: 10px;
   text-align: center;
 }
