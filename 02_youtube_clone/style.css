@@ -1,0 +1,299 @@
+:root {
+  --main-bg-white: rgb(255, 255, 255);
+  --main-bg-black: rgb(0, 0, 0);
+  --black-color: rgb(42, 42, 43);
+  --blue-color: rgb(43, 46, 233);
+  --red-color: rgb(253, 84, 84);
+  --grey-dark-color: rgb(145, 144, 144);
+  --grey-light-color: rgb(92, 91, 91);
+  --padding: 12px;
+  --avatar-size: 36px;
+  --font-large: 18px;
+  --font-medium: 16px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul {
+  /* ul 의 모든 리스트 스타일을 없앤다. */
+  list-style: none;
+}
+
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding);
+  background-color: var(--main-bg-black);
+  color: var(--main-bg-white);
+}
+
+header .logo {
+  font-size: var(--font-large);
+}
+
+header .logo i {
+  color: var(--red-color);
+}
+
+header .icons .fa-search {
+  margin-right: var(--padding);
+}
+
+/* Video Player 클래스를 접근할때는 .을 붙여준다. 
+플레이어에있는 비디오 태그
+아이템을 반응형으로 만드는 좋은방법은 퍼센트 100% 를준다.*/
+
+.player {
+  /* 자...  position: sticky; 가 무엇이냐? 딱 붙어있어라.. 라는말
+    그러면 어디에 붙을꺼냐? 스크롤을 내려도 맨위에 붙어야지 그래서
+     top: 0; 맨위에 고정해라 스크롤을 내려도 무엇을? 플레이어를 */
+  position: sticky;
+  top: 0;
+  text-align: center;
+  background-color: var(--black-color);
+}
+
+.player video {
+  width: 100%;
+  height: 500px;
+  /* 이렇게 두면 너무 커져버림.. 제한을 두고싶으면.. */
+  max-width: 1000px;
+  /* 이렇게 max-width 의 1000px 까지만을 제한을둔다. */
+}
+
+body > .info {
+  padding: var(--padding);
+}
+
+.info .metadata .hashtags {
+  display: flex;
+  font-size: var(--font-small);
+  color: var(--blue-color);
+}
+
+.info .metadata .hashtags li {
+  /* li 옆에 동그라미 어떻게 없애나? 위로가서 ul 리스트 스타일 ㄱㄱ */
+  margin-right: var(--padding);
+}
+
+.info .metadata .titleAndButton {
+  display: flex;
+}
+
+.info .metadata .titleAndButton .title {
+  font-size: var(--font-medium);
+  /* css line clamp 2줄로 제한하며 , 
+  vertical 로 하고 나머지는 ... 하겠다. 
+  textView 엘립사이즈랑 똑같은 기능.*/
+
+  /* clamp 가 없을때는 해당코드 적용이 안되어있다가
+  clamp 가 있을때는 있도록 만들어주면 
+  버튼을 눌렀을때 펼쳐보이게 하는기능이 완성된다. */
+  /* display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; */
+  overflow: hidden;
+  margin-right: var(--padding);
+}
+
+.info .metadata .titleAndButton .title.clamp {
+  /*class="title clamp" 가 생기면.. 
+   는 .title.clamp 를 적어준다 해당부분 붙여주는거 주의!!*/
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.info .metadata .titleAndButton .moreBtn {
+  margin-top: 3px;
+  height: 100%;
+  transition: transform 300ms ease-in-out;
+}
+
+.info .metadata .titleAndButton .moreBtn.clicked {
+  /* 버튼이 바뀌게 만드려면 .. 즉 움직이게 변화하게 만드러면
+  트랜스폼을*/
+  /* 그럼 얘는? class="moreBtn clicked" 이겠지? 
+  그리고 해당부분이 돌아가야겠지? 로테이트 180deg 를 사용한다.*/
+  transform: rotate(180deg);
+}
+
+.info .views {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+.info .actions {
+  display: flex;
+  justify-content: space-around;
+  /* space-around 뷰에 맞는 중심축으로 가겠다. */
+  margin: var(--padding) 0;
+  /*  0 넣어서 */
+}
+
+.info .actions button {
+  display: flex;
+  flex-direction: column;
+  /* 그 밑에 글자들이 밑으로 가야하니까 flex-direction: column; */
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+  background-color: var(--main-bg-white);
+}
+
+.info .actions button i {
+  /*  margin: 0; 위아래로 지정하지 않겠다. 그리고 양옆을 auto로 하겠다. 
+  --> margin: 0 auto;--> 이말은 i 태그에 있는 모든 녀석들을 gravity : center 를 주겠다.*/
+  margin: 0 auto;
+  margin-bottom: calc(var(--padding) / 2);
+  /*  calc() 함수는 var(--padding) / 2 를 계산해줌. 즉 반만 넣겠다. */
+  font-size: 16px;
+  /* 태그는 이미지와 상관없이 font-size 로 통일.  */
+}
+
+.info .actions button i.active {
+  /* 해당경로의 active 만 포만하는애의 컬러를 바꿔주고싶다?*/
+  /* i.active 부분 붙어있는거 주의!! */
+  color: var(--blue-color);
+}
+
+.info .channel {
+  /* .metadata , .subscribe 만 flex가 되는거야  */
+  display: flex;
+  justify-content: space-between;
+  /* border-top: 1px solid var(--grey-dark-color);
+  해석 : 보더 탑을 1px 만큼 solid 형태로 줄껀데 색상은 위색상으로
+  즉, 선을 긋겟다 라는말임.. */
+  border-top: 1px solid var(--grey-light-color);
+  border-bottom: 1px solid var(--grey-light-color);
+}
+
+.info .channel .metadata {
+  display: flex;
+  align-items: center;
+  /* 아이템을 center로 .. */
+}
+
+.info .channel .metadata img {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  /* 이미지 동그랗게는 어떻게할까? : border-radius: 50%;*/
+  border-radius: 50%;
+}
+
+.info .channel .metadata .info {
+  display: flex;
+  flex-direction: column;
+  /* flex 는 기본적으로 들어가고 , 그 방향을 세로로 두겠다는것. */
+}
+
+.info .channel .metadata .info .name {
+  font-size: var(--font-medium);
+}
+
+.info .channel .metadata .info .subscriber {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+.info .channel .subscribe {
+  /* 모든문자열을 대문자로 */
+  text-transform: uppercase;
+  color: var(--red-color);
+  font-size: var(--font-medium);
+  background-color: var(--main-bg-white);
+}
+
+/* upNext */
+
+.upNext {
+  padding: 0 var(--padding);
+}
+
+.upNext > .title {
+  /* upNext 자식인 title 만 주고싶을때 자식을 지칭하는 > 를 사용. */
+  font-size: var(--font-medium);
+  color: var(--grey-dark-color);
+  margin-bottom: calc(var(--padding) / 2);
+}
+
+.upNext .item {
+  /* 아이템들 가로로 총 3개가 있다. 
+    이미지 + 제목 + 버튼 이렇게 있는데 .. 각각 분배해서 줘야겠지?
+    그니까 .. 35프로 + 60프로 + 5프로 이렇게 그럼 어떻게 해야할까?
+    
+    우선 해당 태그값을 가져온다. 세개 */
+  display: flex;
+  margin-top: var(--padding);
+}
+
+.upNext .item .img {
+  /* 줄어들때 늘어날때는 1 1 로 써주고 얼마나 차지하는지는 35프로를 써준다. 
+  일단 이렇게 비율조정 완료*/
+  flex: 1 1 35%;
+  margin-right: var(--padding);
+}
+
+.upNext .item .img img {
+  width: 100%;
+  /* 이렇게 두면 너무 커져버림.. 제한을 두고싶으면.. */
+  /* max-width: 200px; */
+  /* 각 아이템이 100% 비율로 똑같이 늘어나고 줄어나야하니까
+  이름은 똑같이두고나서 진행한다!  */
+}
+
+.upNext .item .info {
+  flex: 1 1 50%;
+}
+
+.upNext .item .moreBtn {
+  flex: 1 1 10%;
+}
+
+.upNext .item .info {
+  /* 인포에 있는것들 제목이랑 이름이랑 얼마나봤는지
+    얘네들만 뭐해? 세로로 해야하니까 맨날하던 이부분 한다! */
+  display: flex;
+  flex-direction: column;
+}
+
+.upNext .item .info .title {
+  font-size: var(--font-small);
+}
+
+.upNext .item .info .name,
+.upNext .item .info .views {
+  font-size: var(--font-micro);
+  color: var(--grey-dark-color);
+}
+
+.infoAndUpNext {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .infoAndUpNext {
+    flex-direction: row;
+    margin: var(--padding) 0;
+  }
+}

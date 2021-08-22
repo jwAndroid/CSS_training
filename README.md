@@ -14,3 +14,5 @@
 - https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=616161
 - https://fontawesome.com/start
 - https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+- google color Picker
+- css line clamp
