@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 리셋 css는 reset css 검색후 메이웨더웹 쪽에서 코드 복사해서 , reset.css 하나 만들고 거기에 붙여주고나서
+    이렇게 css 연동해준다. 이걸 해주는 이유는 그냥 해라 그리고 항상 위에 적어주어야 한다. 위에서부터 아래로 흘러들어가니까 -->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="example.css" />
+
+    <title>jw</title>
+  </head>
+  <body>
+    <!-- 시맨틱 태그 검색 / gnb 글로벌 네비게이션 바 축약형 -->
+    <!-- 스팬 안쓰는 이유 높이 가로가 날라감. 제어가 안됨. 그래서 블록을 써야함. -->
+    <!-- 그러면 가로로 쌓을때는 어떻게 해야할까??  -->
+    <!-- 여기서 부모태그에서 display flex 를 넣어준다. -->
+    <!-- 그러면 오른쪽거는 어떻게 오른쪽으로 갈까? 저스티스 컨텐츠의 스페이스 비트윈을 넣어준다 -->
+    <!-- 컨트롤 스페이스 누르면 뭘 써야할지 나온다.  -->
+    <!-- 깃허브의 플렉스박스 프로그 게임 깨면 됨. -->
+    <!-- justify-content : 자식애들 어떻게 할래? 라는말임  -->
+    <!-- 자식에 있는애중에 왼쪽 박스만 오른쪽에 붙이고 싶으면?? -->
+    <!-- 세로의 중앙은 ? 얼라인 아이템의 센터로 -->
+    <!-- 기준행을 세로냐 가로냐 할꺼냐 할꺼는 나중에 알게될꺼임.-->
+    <!-- 값들이 중앙 정렬 어떻게 할꺼냐? -->
+    <header>
+      <div class="logo"></div>
+
+      <nav class="gnb">
+        <ul>
+          <li>메뉴1</li>
+          <li>메뉴2</li>
+          <li>메뉴3</li>
+          <li>메뉴4</li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
