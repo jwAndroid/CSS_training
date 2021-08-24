@@ -75,3 +75,99 @@ ul > li {
   justify-content: center;
   align-items: center 
   3가지만 해주면 된다. 공식2 */
+
+.slide {
+  background-color: #303030;
+  height: 400px;
+}
+
+.contents {
+  display: flex;
+}
+
+.contents > div {
+  flex: 1;
+  background-color: aquamarine;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contents > div:nth-child(1) {
+  background-color: black;
+}
+
+.contents > div:nth-child(2) {
+  background-color: rgb(233, 12, 115);
+}
+
+.contents > div:nth-child(3) {
+  background-color: rgb(58, 20, 228);
+}
+/* nth-child(n) --> 자식에서 1 2 3 */
+
+.contents > div:hover {
+  /* 호버 자식의 호버 */
+  background-color: blueviolet;
+}
+
+.contents2 {
+  background-color: brown;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contents3 {
+  background-color: rgb(42, 165, 58);
+  height: 50px;
+  flex: 1;
+}
+
+.contents4 {
+  background-color: rgb(255, 255, 255);
+  height: 50px;
+  flex: 1;
+}
+/* > 가 있으면 밑에 자식하나만 , 없으면 모든 자식한테만 */
+/* footer {
+  display: flex;
+  height: 200px;
+}
+
+footer > div:nth-child(1) {
+  flex: 1;
+}
+
+footer > div:nth-child(1) > div {
+  height: 100px;
+  background-color: crimson;
+}
+
+footer > div:nth-child(2) {
+  width: 200px;
+  background-color: cornflowerblue;
+}
+ */
+
+footer {
+  display: flex;
+  height: 200px;
+  background-color: cyan;
+}
+
+footer > div:nth-child(1) {
+  width: 200px;
+  background-color: rgb(79, 19, 156);
+}
+
+footer > div:nth-child(2) {
+  flex: 1;
+  background-color: rgb(28, 202, 22);
+}
+
+footer > div:nth-child(3) {
+  width: 200px;
+  background-color: rgb(124, 71, 167);
+}
