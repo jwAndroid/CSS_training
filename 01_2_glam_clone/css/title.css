@@ -1,0 +1,24 @@
+.title {
+  margin-top: 140px;
+  justify-content: center;
+  /* 중앙정렬 같이 들어가는값 */
+  display: flex;
+  /* flex는 정말 많이쓴다. */
+  font-size: 35px;
+  /* 애플폰트를 가장 많이씀 */
+  font-weight: 800;
+  /* 글자 두께 */
+  color: #000000e6;
+  /* rgb말고 이걸로 쓸것 */
+  letter-spacing: -1px;
+  /* 보통 -1 을 많이 넣는다. */
+}
+
+.sub-title {
+  margin-top: 16px;
+  justify-content: center;
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  color: #00000080;
+}

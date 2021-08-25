@@ -1,0 +1,64 @@
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  background: #60b99a;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.flex-item {
+  margin: 15px;
+  text-align: center;
+  border-radius: 10px;
+  width: 100px;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.9);
+  letter-spacing: -1px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.sub-title {
+  font-size: 30px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.animation {
+  width: 300px;
+  height: 300px;
+  background-color: #eee;
+}
+
+/* 문자 그대로 버튼3에 이러한 속성을 주겠다. 라는말. */
+.button {
+  width: 320px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #60b99a;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+/* 마우스 커서를 올릴때 흰색으로 변하는걸 볼수있다.
+  button:hover 이렇게 붙여야 적용됨 */
+.button:hover {
+  opacity: 0.5;
+}

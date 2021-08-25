@@ -1,0 +1,12 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.logo > img {
+  width: 66px;
+  height: 30px;
+}
+
+/* 꺽쇠가로로 바로 밑 자식을 접근하는게 좋다 하나만 있을때 */
