@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/logo.css" />
     <link rel="stylesheet" href="css/title.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/button.css" />
 
-    <title>Document</title>
+    <title>연애 능력치 테스트 | 글램</title>
   </head>
 
   <body>
@@ -22,6 +24,22 @@
       <h2 class="title">연애 능력치 테스트</h2>
       <h3 class="sub-title">나의 연애 성격 유형과 숨겨진 능력은?</h3>
       <!-- 클래스명은 카멜표기법이 안된다. sub-title" 이런식으로 작성하는게 맞음. -->
+      <!-- class 여러개를 동시에 css를 적용할때 쓴다 -->
+
+      <div class="animation">
+        <img class="free-anim" src="./img/free.gif" alt="free" />
+      </div>
+
+      <button class="button hot-pink ma-30 button1-js">
+        연애 능력치 알아보기
+      </button>
+
+      <button class="button purple ma-10 button2-js">
+        19금 능력치 알아보기
+      </button>
+      <!-- ma-30 넣고 / ma-10 넣고 -->
     </div>
+
+    <script src="./script/index.js"></script>
   </body>
 </html>

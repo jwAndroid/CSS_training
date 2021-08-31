@@ -1,0 +1,20 @@
+.button {
+  width: 300px;
+  height: 60px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.button:hover {
+  opacity: 0.7;
+}
+
+.hot-pink {
+  background-color: #e10098;
+}
+
+.purple {
+  background-color: #7248bd;
+}
